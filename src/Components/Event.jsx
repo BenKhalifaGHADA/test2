@@ -1,6 +1,6 @@
 import Button from 'react-bootstrap/Button';
 
-import { useState } from 'react';
+import { useState  } from 'react';
 import Card from 'react-bootstrap/Card';
 import Alert from 'react-bootstrap/Alert';
 import { Link } from "react-router-dom";
@@ -29,9 +29,9 @@ function Event(props) {
       <Card style={{ width: '18rem' }}>
       <Card.Img variant="top" src={`/images/${!!event.nbTickets ? event.img : "sold_out.png"}`}/>
       <Card.Body>
-        <Link to="`${event.id}`">
-        <Card.Title>{event.name}</Card.Title>
-        </Link>
+      <Card.Title>
+            <Link to={`/events/${event.id}`}>{event.name}</Link>
+          </Card.Title>
         <Card.Text>Description: {event.description}</Card.Text>
         
         <Card.Text>

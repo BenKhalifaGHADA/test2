@@ -12,6 +12,7 @@ function Events() {
       const fetchEvents = async () => {
         const eventsResult = await getallEvents();
         setEventList(eventsResult.data);
+        console.log(eventList)  ; 
       };
       fetchEvents();
     }, []);

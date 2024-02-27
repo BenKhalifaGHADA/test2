@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 //import events from "../data/events.json";
